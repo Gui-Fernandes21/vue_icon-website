@@ -1,8 +1,12 @@
 <template>
   <div id="kids-time-table" class="section scrollspy">
-    <div id="header-container">
+    <div id="header-container" v-if="!isMobile">
       <h2 class="header">Kid's Classes</h2>
       <div class="header-highlight"></div>
+    </div>
+    <div id="header-container" v-else>
+      <h2 class="header-mobile">Kid's Classes</h2>
+      <div class="header-highlight-mobile"></div>
     </div>
     <table class="striped hide-on-small-and-down">
       <thead>
@@ -78,7 +82,6 @@
           <td></td>
         </tr>
         <tr>
-          <!-- <td v-for="day in days" :key="day"></td> -->
           <td class="center-align orange lighten-2 z-depth-2">
             <p>Kids(6-9) Class</p>
             <p>16:00 - 17:00</p>
@@ -99,7 +102,6 @@
           <td></td>
         </tr>
         <tr>
-           <!-- <td v-for="day in days" :key="day"></td> -->
           <td class="center-align red lighten-2 z-depth-2">
             <p>Kids(9-12) Class</p>
             <p>17:00 - 18:00</p>
@@ -122,8 +124,9 @@
       </tbody>
     </table>
     <img
-      class="hide-on-med-and-up materialboxed"
-      src="img/kids_timetable.png"
+      class="hide-on-med-and-up"
+      @click.stop
+      src="img/kids-timetable_icon.png"
     />
   </div>
 </template>
@@ -134,6 +137,15 @@ export default {
     return {
       days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     };
+  },
+  computed: {
+    isMobile() {
+      if (screen.width <= 440) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
@@ -164,6 +176,15 @@ h2.header {
   font-weight: bold;
   margin: 2rem;
 }
+h2.header-mobile {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+.header-mobile {
+  font-weight: bold;
+  margin: 2rem;
+}
 #header-container {
   display: flex;
   justify-content: center;
@@ -174,5 +195,9 @@ h2.header {
 .header-highlight {
   width: 20rem;
   border-top: 4px rgb(255, 166, 0) solid;
+}
+.header-highlight-mobile {
+  width: 18rem;
+  border-top: 4px orange solid;
 }
 </style>

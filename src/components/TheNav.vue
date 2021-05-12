@@ -9,7 +9,7 @@
           src="/img/pablo_cerino_bjj-school.png"
       /></a>
       <a href="/" class="hide-on-med-and-up brand-logo"
-        ><img class="logo" src="/img/logo-Pablo-Cerino.png"
+        ><img class="logo logo-mobile" src="/img/logo-Pablo-Cerino.png"
       /></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"
         ><i class="material-icons">menu</i></a
@@ -121,7 +121,7 @@ i {
   margin-left: 2rem;
 }
 
-.logo {
+.logo-mobile {
   margin-right: 50px;
 }
 

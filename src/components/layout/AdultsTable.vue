@@ -1,13 +1,17 @@
 <template>
   <div id="time-table" class="section scrollspy">
-    <div id="header-container">
+    <div id="header-container" v-if="!isMobile">
       <h2 class="header">Adult Classes</h2>
       <div class="header-highlight"></div>
+    </div>
+    <div id="header-container" v-else-if="isMobile">
+      <h2 class="header-mobile">Adult Classes</h2>
+      <div class="header-highlight-mobile"></div>
     </div>
     <table class="striped hide-on-small-and-down">
       <thead>
         <tr>
-          <th class="center-align" v-for="day in days" :key="day">{{day}}</th>
+          <th class="center-align" v-for="day in days" :key="day">{{ day }}</th>
         </tr>
       </thead>
       <tbody>
@@ -91,8 +95,9 @@
       </tbody>
     </table>
     <img
-      class="hide-on-med-and-up materialboxed"
-      src="/img/icon-time-table.png"
+      class="hide-on-med-and-up "
+      @click.stop
+      src="/img/adults-timetable_icon.png"
     />
   </div>
 </template>
@@ -103,6 +108,15 @@ export default {
     return {
       days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     };
+  },
+  computed: {
+    isMobile() {
+      if (screen.width <= 440) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   }
 };
 </script>
@@ -131,6 +145,15 @@ h2.header {
   font-weight: bold;
   margin: 2rem;
 }
+h2.header-mobile {
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-size: 3rem;
+}
+.header-mobile {
+  font-weight: bold;
+  margin: 2rem;
+}
 #header-container {
   display: flex;
   justify-content: center;
@@ -140,6 +163,10 @@ h2.header {
 }
 .header-highlight {
   width: 20rem;
+  border-top: 4px orange solid;
+}
+.header-highlight-mobile {
+  width: 18rem;
   border-top: 4px orange solid;
 }
 </style>

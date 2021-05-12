@@ -183,7 +183,7 @@
         <div class="section white">
           <div class="row container">
             <div class="col s12 center center-align">
-              <kids-table></kids-table>
+              <adults-table></adults-table>
             </div>
           </div>
         </div>
@@ -192,7 +192,7 @@
         <div class="section white">
           <div class="row container">
             <div class="col s12 center center-align">
-              <adults-table></adults-table>
+              <kids-table></kids-table>
             </div>
           </div>
         </div>
@@ -261,7 +261,7 @@
               </div>
             </div>
             <div class="col s12 m6 right-align">
-              <form action="/send-email" method="POST">
+              <!-- <form action="/send-email" method="POST">
                 <div class="row">
                   <div class="input-field col s6 m6">
                     <input
@@ -300,10 +300,10 @@
                     ></textarea>
                     <label for="content">Content</label>
                   </div>
-                  <!-- <div
+                  <div
                     style="background-color: rgba(255, 126, 126, 0.541); border-radius: 10px;"
                     class="center-align col s12"
-                  ></div> -->
+                  ></div>
                   <div
                     style="margin-top: 10px;"
                     class="col s6 offset-s2 m5 offset-m3"
@@ -316,7 +316,7 @@
                     </button>
                   </div>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
         </div>
@@ -345,7 +345,7 @@ import KidsTable from "./components/layout/KidsTable.vue";
 import AdultsTable from "./components/layout/AdultsTable.vue";
 
 import FeeSection from "./components/sections/FeeSection.vue";
-import FaqSection from './components/sections/FaqSection.vue';
+import FaqSection from "./components/sections/FaqSection.vue";
 
 export default {
   components: {
