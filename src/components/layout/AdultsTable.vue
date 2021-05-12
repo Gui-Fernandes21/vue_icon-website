@@ -29,6 +29,9 @@
           <td></td>
         </tr>
         <tr>
+          <td v-for="day in days" :key="day"></td>
+        </tr>
+        <tr>
           <td></td>
           <td></td>
           <td></td>
@@ -36,11 +39,8 @@
           <td></td>
           <td class="center-align orange lighten-1 z-depth-2">
             <p>BJJ Adults</p>
-            <p>13:30 - 15:00</p>
+            <p>14:00 - 15:30</p>
           </td>
-        </tr>
-        <tr>
-          <td v-for="day in days" :key="day"></td>
         </tr>
         <tr>
           <td v-for="day in days" :key="day"></td>
@@ -68,24 +68,24 @@
             <p>BJJ Adults</p>
             <p>19:30 - 21:00</p>
           </td>
-          <td></td>
+          <td class="center-align orange lighten-1 z-depth-2">
+            <p>BJJ Adults</p>
+            <p>19:30 - 21:00</p>
+          </td>
           <td></td>
         </tr>
         <tr>
           <td class="center-align orange lighten-1 z-depth-2">
             <p>BJJ Adults</p>
-            <p>20:00 - 22:00</p>
+            <p>20:00 - 21:30</p>
           </td>
           <td></td>
           <td class="center-align orange lighten-1 z-depth-2">
             <p>BJJ Adults</p>
-            <p>20:00 - 22:00</p>
+            <p>20:00 - 21:30</p>
           </td>
           <td></td>
-          <td class="center-align orange lighten-1 z-depth-2">
-            <p>BJJ Adults</p>
-            <p>20:00 - 22:00</p>
-          </td>
+          <td></td>
           <td></td>
         </tr>
       </tbody>
@@ -120,7 +120,7 @@ td.center-align {
 td p {
   padding: 0;
   margin: 0;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 h2.header {
   margin-bottom: 0;

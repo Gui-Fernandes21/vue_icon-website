@@ -121,6 +121,10 @@ i {
   margin-left: 2rem;
 }
 
+.logo {
+  margin-right: 50px;
+}
+
 @media (max-width: 600px) {
   #navbar-material .nav-wrapper .brand-logo img {
     height: 56px;

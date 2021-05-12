@@ -43,9 +43,20 @@
     </div>
     <div id="fee-kids" class="section scrollspy col s12">
       <h3 class="header grey-text text-darken-4">Kid's Class</h3>
-      <p class="grey-text text-darken-3 lighten-3">
-        All classes - 150€ for 3 months
-      </p>
+      <div>
+        <p class="grey-text text-darken-3 lighten-3">
+          2x pr.week - 150€ for 3 months membership
+        </p>
+        <p class="grey-text text-darken-3 lighten-3">
+          3x pr.week - 225€ for 3 months membership
+        </p>
+        <p class="grey-text text-darken-3 lighten-3">
+          6x pr.week - 330€ for 3 months membership
+        </p>
+        <span class="red-text text-lighten-1">
+          You are required to choose which days of the week your kid is going to attend class
+        </span>
+      </div>
     </div>
     <div id="fee-private" class="section scrollspy col s12">
       <h3 class="header grey-text text-darken-4">Private Class</h3>
