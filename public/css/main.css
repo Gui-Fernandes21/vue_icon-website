@@ -1,0 +1,42 @@
+html {
+  height: 8083.62px;
+}
+*{
+  outline: none;
+}
+
+div strong {
+  font-size: larger;
+}
+
+.item-sidenav_col {
+  color: rgba(0,0,0,0.87);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+}
+.logo {
+  height: 55px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.logo-desc {
+  height: 45px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.nav-color {
+  background-color: #231f20;
+}
+@media (max-width: 600px) {
+  .logo{
+    height: 50px;
+  }
+  .logo-desc {
+    height: 37px;
+    width: 160px;
+  }
+}

@@ -1,0 +1,175 @@
+<template>
+  <div class="section scrollspy" id="faq">
+    <h2 class="header">FAQ</h2>
+    <br />
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>Do I need the traditional
+          clothing (Gi or Kimono) to train Brazilian Jiu Jitsu?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >To start with, you do not need a Gi. You can simply train in shorts
+            and a t-shirt. When you get better, you will both want and have to
+            start training in a Gi (except in Nogi). The Gi is essential since
+            much of the training involves grabbing the Gi and you use the Gi for
+            a lot of techniques in BJJ.</span
+          >
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>What is Nogi Jiu Jitsu?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >Nogi is Jiu Jitsu without a Gi. People train Nogi in shorts or
+            tight long pants and tight shirts, long- or short sleeved. In
+            summer, we also have Nogi classes</span
+          >
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>What color of Gi should I buy?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >It does not matter. Most BJJ Gis are white, black or blue but all
+            colors are allowed.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>Is the Gi expensive?
+        </div>
+        <div class="collapsible-body">
+          <span>You can get Gis from 100 Euros and up. </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>How do I clean the Jiu Jitsu Gi?
+        </div>
+        <div class="collapsible-body">
+          <span>
+            You wash it on low temperatures so it does not shrink too much. If
+            the BJJ Gi is not washed immediately after training, it can start to
+            smell and the smell can stay in the Gi even if you wash it. Then
+            it´s good to get a disinfection liquid to put in your washing
+            machine along with the washing detergent.</span
+          >
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>What is open mat?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >Open mat is when there is no scheduled training by a coach but
+            people show up to the gym to grapple</span
+          >
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>How long will it take to get a
+          black belt in Jiu Jitsu?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >First you have to get a blue, purple and a brown belt so it´s a
+            long journey to the black belt in BJJ.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>When will I be able to defend
+          myself if I start training BJJ today?
+        </div>
+        <div class="collapsible-body">
+          <span>
+            Brazilian Jiu Jitsu is an excellent self defense and even after a
+            few weeks, you will be in a better position to defend yourself than
+            before.</span
+          >
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>When can I start training BJJ?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >You can start at any time. Simply come to one of our BJJ classes
+            and meet the coach. You won´t regret it.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>Do I need to do anything before I
+          come to the first BJJ training?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >Simply bring your shorts and t-shirt and please cut your
+            fingernails and toenails.</span
+          >
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>How much does it cost to train
+          Brazilian Jiu Jitsu at your gym in Brussels?
+        </div>
+        <div class="collapsible-body">
+          <span>You can check our fee plans.</span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>Can I or should I do BJJ private
+          classes?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >If you want to improve faster or if you have a difficult scheduled
+            to fit in our collective classes, or if you prefer an one to one
+            class you can take private classes.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>Is Brazilian Jiu Jitsu also for
+          girls/women?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >Absoloutely! There are many girls training in our gym and training
+            BJJ makes most girls and women more self confident and in a better
+            condition to defend themselves.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="fa fa-question-circle"></i>I don´t like to get punched or
+          kicked, is BJJ then suitable for me?
+        </div>
+        <div class="collapsible-body">
+          <span
+            >Yes, we don´t kick or punch in BJJ. We do however incorporate that
+            threat into our training so that you are able to defend yourself
+            against kicks and punches without using it yourself.</span
+          >
+        </div>
+      </li>
+    </ul>
+  </div>
+</template>
