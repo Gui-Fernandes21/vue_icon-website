@@ -75,7 +75,7 @@
           <td></td>
           <td class="center-align red lighten-2 z-depth-2">
             <p>Kids(9-12) Class</p>
-            <p>14:30 - 15:45</p>
+            <p>15:30 - 16:30</p>
           </td>
           <td></td>
           <td></td>
@@ -165,6 +165,10 @@ td p {
   padding: 0;
   margin: 0;
   /* font-weight: bold; */
+}
+
+p.bold {
+  font-weight: bold;
 }
 
 h2.header {

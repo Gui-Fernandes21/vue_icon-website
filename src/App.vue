@@ -5,6 +5,7 @@
     </div>
     <div class="row">
       <parallax imageUrl="/img/icon-team-picture.jpg" />
+      
       <logo-cards></logo-cards>
 
       <div class="section white">
@@ -13,7 +14,7 @@
             <div class="section scrollspy" id="what-bjj">
               <h2 class="header">What is Brazilian Jiu Jitsu?</h2>
               <p
-                style="font-size: large;"
+                style="font-size: large"
                 class="grey-text text-darken-3 lighten-3"
               >
                 Brazilian Jiu Jitsu or BJJ is a martial art, focused on self
@@ -27,58 +28,12 @@
                 shape and make them ready to defend themselves if needed. It´s
                 also fun and a you become a part of a great team.
               </p>
-              <br />
-              <section class="section section-icons grey lighten-4 center">
-                <div class="container">
-                  <div class="row">
-                    <div class="col s12 m4">
-                      <div class="card-panel">
-                        <i class="material-icons large orange-text"
-                          >fitness_center</i
-                        >
-                        <h6 class="header">Great For Exercising</h6>
-                      </div>
-                    </div>
-                    <div class="col s12 m4">
-                      <div class="card-panel">
-                        <i class="material-icons large orange-text">group</i>
-                        <h6 class="header">Great For Social Networking</h6>
-                      </div>
-                    </div>
-                    <div class="col s12 m4">
-                      <div class="card-panel">
-                        <i class="material-icons large orange-text"
-                          >self_improvement</i
-                        >
-                        <h6 class="header">Great For Self Improvement</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <br />
-              <h2 class="header">About our Head Coach</h2>
-              <br />
-              <img
-                style="display: unset; border-radius: 10px; max-width: 45%;"
-                src="/img/pablo_picture.jpg"
-                class="responsive-img materialboxed"
-              />
-              <p
-                style="font-size: large;"
-                class="grey-text text-darken-3 lighten-3"
-              >
-                Our main coach is Pablo Cerino, He holds a 4rd degree black belt
-                in Brazilian Jiu Jitsu and has been practicing BJJ since 1993.
-                <br />
-                Pablo actively competes in the biggest competitions and achieve
-                great results <br />
-                He has an extensive knowledge about BJJ and self defense and
-                years of coaching experience. <br />
-                Pablo is a Brazilian native but has lived in Brussels since 2008
-                and speaks Portugese, French and English fluently.
-              </p>
             </div>
+
+            <benefits-cards></benefits-cards>
+
+            <head-coach-section v-if="!isMobile"></head-coach-section>
+            <mobile-head-coach v-else></mobile-head-coach>
           </div>
         </div>
       </div>
@@ -89,7 +44,7 @@
             <div id="location" class="section scrollspy">
               <h2 class="header">Where are we located?</h2>
               <p
-                style="font-size: large;"
+                style="font-size: large"
                 class="grey-text text-darken-3 lighten-3"
               >
                 Our Gym is located at:
@@ -108,7 +63,7 @@
               <h2 class="header">The Gym</h2>
               <br />
               <p
-                style="font-size: large;"
+                style="font-size: large"
                 class="grey-text text-darken-2 lighten-4"
               >
                 We have a full equipped facility, with a nice reception to
@@ -117,56 +72,56 @@
                 with more than 150 meters square of professional tatami.
               </p>
               <br />
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/icon-reception.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/bjj-gym-reception_orig.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/icon-mats.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/bjj-tatami_orig.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/bjj-locker-room_orig.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/female-bjj-locker-room-shower_orig.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/bjj-shower_orig.jpg"
                   class="materialboxed"
                   width="100%"
                 />
               </div>
-              <div style="margin-top: 9px;" class="col s6 m3">
+              <div style="margin-top: 9px" class="col s6 m3">
                 <img
                   src="/img/linedup-team-picture.jpg"
                   class="materialboxed hide-on-med-and-down"
@@ -176,7 +131,7 @@
             </div>
           </div>
         </div>
-        <div style="height: 150px;"></div>
+        <div style="height: 150px"></div>
       </div>
       <parallax imageUrl="/img/seminar-2018.jpg" />
       <section>
@@ -232,7 +187,7 @@
                   <p>
                     <i
                       class="fa fa-instagram fa-lg"
-                      style="margin-right: 5px;"
+                      style="margin-right: 5px"
                       aria-hidden="true"
                     ></i>
                     IconBjjBelgium
@@ -240,7 +195,7 @@
                   <p>
                     <i
                       class="fa fa-facebook fa-lg"
-                      style="margin-right: 10px;"
+                      style="margin-right: 10px"
                       aria-hidden="true"
                     ></i
                     >Pablo Cerino
@@ -252,7 +207,7 @@
                   <p>
                     <i
                       class="fa fa-at fa-lg"
-                      style="margin-right: 3px;"
+                      style="margin-right: 3px"
                       aria-hidden="true"
                     ></i>
                     pcerinorj@gmail.com
@@ -331,21 +286,23 @@
 
   <!-- sidenav for mobile -->
   <side-nav></side-nav>
-
-  <div style="margin-top: 700px;"></div>
 </template>
 
 <script>
 import TheNav from "./components/TheNav.vue";
 import Parallax from "./components/Parallax.vue";
+
 import SideNav from "./components/mobile/SideNav.vue";
+import MobileHeadCoach from "./components/mobile/MobileHeadCoach.vue";
 
 import LogoCards from "./components/layout/LogoCards.vue";
 import KidsTable from "./components/layout/KidsTable.vue";
 import AdultsTable from "./components/layout/AdultsTable.vue";
+import BenefitsCards from "./components/layout/BenefitsCards.vue";
 
 import FeeSection from "./components/sections/FeeSection.vue";
 import FaqSection from "./components/sections/FaqSection.vue";
+import HeadCoachSection from "./components/sections/HeadCoachSection.vue";
 
 export default {
   components: {
@@ -356,9 +313,28 @@ export default {
     KidsTable,
     AdultsTable,
     FeeSection,
-    FaqSection
-  }
+    FaqSection,
+    BenefitsCards,
+    HeadCoachSection,
+    MobileHeadCoach,
+  },
+  data() {
+    return {
+      isMobile: null,
+    };
+  },
+  created() {
+    if (screen.width <= 760) {
+      return (this.isMobile = true);
+    } else {
+      return (this.isMobile = false);
+    }
+  },
 };
 </script>
 
-<style></style>
+<style>
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+</style>
