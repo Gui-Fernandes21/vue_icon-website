@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/css/main.css" />
 
@@ -62,12 +61,12 @@
     <script src="helper.js"></script>
 
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
         $(".sidenav").sidenav();
 
         $(".scrollspy").scrollSpy({
           scrollOffset: 200,
-          throttle: 50
+          throttle: 50,
         });
 
         $(".pushpin").pushpin();
@@ -77,13 +76,13 @@
         $(".dropdown-button").dropdown({
           constrainWidth: false,
           hover: true,
-          coverTrigger: false
+          coverTrigger: false,
         });
 
         $(".dropdown-btn").dropdown({
           constrainWidth: false,
           hover: false,
-          coverTrigger: false
+          coverTrigger: false,
         });
 
         $(".materialboxed").materialbox();

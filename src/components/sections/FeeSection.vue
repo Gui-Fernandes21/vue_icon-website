@@ -1,9 +1,7 @@
 <template>
   <div class="section scrollspy" id="fees">
-    <div id="header-container">
-      <h2 class="header">Fees</h2>
-      <div class="header-highlight"></div>
-    </div>
+    <standard-header>Fees</standard-header>
+
     <div id="fee-adults" class="section scrollspy col s12">
       <h3 class="header grey-text text-darken-4">Adult Classes</h3>
       <div id="general">
@@ -54,7 +52,8 @@
           6x pr.week - 330€ for 3 months membership
         </p>
         <span class="red-text text-lighten-1">
-          You are required to choose which days of the week your kid is going to attend class
+          You are required to choose which days of the week your kid is going to
+          attend class
         </span>
       </div>
     </div>
@@ -66,7 +65,7 @@
       </p>
       <a
         href="#contact"
-        class="btn grey darken-4 waves-effect waves-light col m2 offset-m5 offset-s4"
+        class="btn grey darken-4 waves-effect waves-light col m2 s4 offset-m5 offset-s4"
       >
         Contact
       </a>
@@ -77,10 +76,12 @@
 
 <script>
 import WarningCards from "../layout/WarningCards.vue";
+import StandardHeader from "../util/StandardHeader.vue";
 
 export default {
   components: {
-    WarningCards
+    WarningCards,
+    StandardHeader,
   },
   computed: {
     isMobile() {
@@ -89,17 +90,12 @@ export default {
       } else {
         return false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped>
-h2.header {
-  margin-bottom: 0;
-  letter-spacing: 1px;
-  font-size: 5rem;
-}
 .grey-text.text-darken-3 {
   font-size: large;
 }
@@ -144,20 +140,10 @@ span {
   margin: 4rem 0;
   padding: 0;
 }
-#header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 3rem;
-}
-.header-highlight {
-  width: 10rem;
-  border-top: 4px orange solid;
-}
 .highlight-line {
-  width: 35rem;
-  border-top: 3px orange solid;
+  height: 3px;
+  width: calc(100% - 35vw);
+  background: orange;
 }
 .header {
   font-weight: bold;

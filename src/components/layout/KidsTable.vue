@@ -15,6 +15,7 @@
         </tr>
       </thead>
       <tbody>
+        <!-- first line -->
         <tr>
           <td></td>
           <td></td>
@@ -26,6 +27,7 @@
             <p>10:00 - 11:00</p>
           </td>
         </tr>
+        <!-- second line -->
         <tr>
           <td></td>
           <td></td>
@@ -37,6 +39,7 @@
             <p>11:00 - 12:00</p>
           </td>
         </tr>
+        <!-- 3 line -->
         <tr>
           <td></td>
           <td></td>
@@ -48,6 +51,7 @@
             <p>12:00 - 13:00</p>
           </td>
         </tr>
+        <!-- 4 line -->
         <tr>
           <td></td>
           <td></td>
@@ -59,6 +63,7 @@
           <td></td>
           <td></td>
         </tr>
+        <!-- 5 line -->
         <tr>
           <td></td>
           <td></td>
@@ -70,6 +75,7 @@
           <td></td>
           <td></td>
         </tr>
+        <!-- 6 line -->
         <tr>
           <td></td>
           <td></td>
@@ -81,7 +87,8 @@
           <td></td>
           <td></td>
         </tr>
-        <tr>
+        <!-- 7 line -->
+        <!-- <tr>
           <td class="center-align orange lighten-2 z-depth-2">
             <p>Kids(6-9) Class</p>
             <p>16:00 - 17:00</p>
@@ -120,7 +127,7 @@
             <p>17:00 - 18:00</p>
           </td>
           <td></td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
     <img

@@ -3,8 +3,10 @@
     <div>
       <the-nav></the-nav>
     </div>
+
+    <parallax imageUrl="/img/icon-team-picture.jpg" />
+
     <div class="row">
-      <parallax imageUrl="/img/icon-team-picture.jpg" />
       
       <logo-cards></logo-cards>
 
@@ -37,7 +39,9 @@
           </div>
         </div>
       </div>
+      
       <parallax imageUrl="/img/bjj-training-brussels_orig.jpg" />
+
       <div class="section white">
         <div class="row center container">
           <div class="center-align center col s12">
@@ -60,80 +64,17 @@
               </p>
               <br />
               <br />
-              <h2 class="header">The Gym</h2>
-              <br />
-              <p
-                style="font-size: large"
-                class="grey-text text-darken-2 lighten-4"
-              >
-                We have a full equipped facility, with a nice reception to
-                welcome newcomers, 2 clean locker rooms, one for women and one
-                for men equipped with showers on both, and a big training area
-                with more than 150 meters square of professional tatami.
-              </p>
-              <br />
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/icon-reception.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/bjj-gym-reception_orig.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/icon-mats.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/bjj-tatami_orig.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/bjj-locker-room_orig.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/female-bjj-locker-room-shower_orig.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/bjj-shower_orig.jpg"
-                  class="materialboxed"
-                  width="100%"
-                />
-              </div>
-              <div style="margin-top: 9px" class="col s6 m3">
-                <img
-                  src="/img/linedup-team-picture.jpg"
-                  class="materialboxed hide-on-med-and-down"
-                  width="100%"
-                />
-              </div>
+              <section>
+                <gym-section></gym-section>
+              </section>
             </div>
           </div>
         </div>
         <div style="height: 150px"></div>
       </div>
+
       <parallax imageUrl="/img/seminar-2018.jpg" />
+      
       <section>
         <div class="section white">
           <div class="row container">
@@ -152,7 +93,9 @@
           </div>
         </div>
       </section>
+
       <br />
+
       <section>
         <div class="section white">
           <div class="row center container">
@@ -162,7 +105,9 @@
           </div>
         </div>
       </section>
+
       <parallax imageUrl="/img/icon-team-precorona.jpg" />
+
       <section>
         <div class="section white">
           <div class="row center container">
@@ -175,113 +120,7 @@
       <!-- End -->
     </div>
     <!-- footer with contact info -->
-    <section id="contact">
-      <footer class="section page-footer nav-color">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <div class="section scrollspy" id="contact">
-                <div class="col s12">
-                  <h3 class="header">Contact</h3>
-                  <br />
-                  <p>
-                    <i
-                      class="fa fa-instagram fa-lg"
-                      style="margin-right: 5px"
-                      aria-hidden="true"
-                    ></i>
-                    IconBjjBelgium
-                  </p>
-                  <p>
-                    <i
-                      class="fa fa-facebook fa-lg"
-                      style="margin-right: 10px"
-                      aria-hidden="true"
-                    ></i
-                    >Pablo Cerino
-                  </p>
-                  <p>
-                    <i class="fa fa-phone fa-lg" aria-hidden="true"></i> +32 (0)
-                    494 18 13 63
-                  </p>
-                  <p>
-                    <i
-                      class="fa fa-at fa-lg"
-                      style="margin-right: 3px"
-                      aria-hidden="true"
-                    ></i>
-                    pcerinorj@gmail.com
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6 right-align">
-              <!-- <form action="/send-email" method="POST">
-                <div class="row">
-                  <div class="input-field col s6 m6">
-                    <input
-                      id="first_name"
-                      name="first_name"
-                      type="text"
-                      class="white-text validate"
-                    />
-                    <label for="first_name">First Name</label>
-                  </div>
-                  <div class="input-field col s6 m6">
-                    <input
-                      id="last_name"
-                      name="last_name"
-                      type="text"
-                      class="white-text validate"
-                    />
-                    <label for="last_name">Last Name</label>
-                  </div>
-                  <div class="input-field col s12 m12">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      class="white-text validate"
-                    />
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <textarea
-                      name="content"
-                      id="content"
-                      cols="30"
-                      rows="10"
-                      class="materialize-textarea white-text"
-                    ></textarea>
-                    <label for="content">Content</label>
-                  </div>
-                  <div
-                    style="background-color: rgba(255, 126, 126, 0.541); border-radius: 10px;"
-                    class="center-align col s12"
-                  ></div>
-                  <div
-                    style="margin-top: 10px;"
-                    class="col s6 offset-s2 m5 offset-m3"
-                  >
-                    <button
-                      type="submit"
-                      class="center-align orange darken-1 btn waves-effect waves-light"
-                    >
-                      Send Email
-                    </button>
-                  </div>
-                </div>
-              </form> -->
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container center-align">
-            Copyright © 2020 IconBrussels
-          </div>
-        </div>
-      </footer>
-    </section>
+    <contact-info-section></contact-info-section>
   </main>
 
   <!-- sidenav for mobile -->
@@ -303,6 +142,8 @@ import BenefitsCards from "./components/layout/BenefitsCards.vue";
 import FeeSection from "./components/sections/FeeSection.vue";
 import FaqSection from "./components/sections/FaqSection.vue";
 import HeadCoachSection from "./components/sections/HeadCoachSection.vue";
+import ContactInfoSection from "./components/sections/ContactInfo.vue";
+import GymSection from "./components/sections/GymSection.vue";
 
 export default {
   components: {
@@ -317,6 +158,8 @@ export default {
     BenefitsCards,
     HeadCoachSection,
     MobileHeadCoach,
+    ContactInfoSection,
+    GymSection,
   },
   data() {
     return {

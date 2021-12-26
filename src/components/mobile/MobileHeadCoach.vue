@@ -1,9 +1,7 @@
 <template>
   <section>
-    <header id="header-container">
-      <h2 class="header">About our Head Coach</h2>
-      <div class="header-highlight"></div>
-    </header>
+    <standard-header>About our Coach</standard-header>
+    
     <img src="/img/pablo_picture.jpg" class="responsive-img materialboxed" />
 
     <section id="desc">
@@ -30,11 +28,16 @@
 </template>
 
 <script>
+import StandardHeader from '../util/StandardHeader.vue';
+
 export default {
   computed: {
     pClass() {
       return "grey-text text-darken-4";
     }
+  },
+  components: {
+    StandardHeader
   }
 };
 </script>
