@@ -1,28 +1,27 @@
 <template>
-  <div class="section scrollspy" id="faq">
-    <div id="header-container">
-      <h2 class="header">FAQ</h2>
-      <div class="header-highlight"></div>
-    </div>
-    <ul class="collapsible">
-      <faq-item v-for="obj in DATA" :faqObject="obj" :key="obj"></faq-item>
-    </ul>
+  <div id="header-container">
+    <h2 class="header">FAQ</h2>
+    <div class="header-highlight"></div>
   </div>
+  <ul class="collapsible">
+    <faq-item v-for="obj in DATA" :faqObject="obj" :key="obj"></faq-item>
+  </ul>
 </template>
 
 <script>
 import FaqItem from "../util/FaqItem.vue";
-import data from '../../../data.json';
+
+import data from "../../../data.json";
 
 export default {
   components: {
-    FaqItem
+    FaqItem,
   },
   data() {
     return {
-      DATA: data
+      DATA: data,
     };
-  }
+  },
 };
 </script>
 

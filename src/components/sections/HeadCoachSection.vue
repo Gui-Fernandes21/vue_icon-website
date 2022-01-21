@@ -46,7 +46,7 @@ export default {
 
 <style scoped>
 p {
-  font-size: 22px;
+  font-size: 20px;
   margin: 5px;
 }
 #paragraphs {
@@ -54,7 +54,10 @@ p {
   flex: 2;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
+  max-width: 30vw;
+  text-align: justify;
 }
 img {
   display: unset;
@@ -65,6 +68,7 @@ img {
 }
 #desc {
   /* width: calc(100% - 10vw); */
+  margin: 0 10vw;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,10 +4,27 @@
       <h2 class="header">
         <slot></slot>
       </h2>
-      <div class="header-highlight"></div>
+      <div :class="highlightToggle"></div>
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  props: ['highlight'],
+  computed: {
+    highlightToggle() {
+      if (this.highlight === false) {
+        return '';
+      } else if (this.highlight === true) {
+        return 'header-highlight';
+      } else {
+        return 'header-highlight';
+      }
+    }
+  }
+}
+</script>
 
 <style scoped>
 h2.header {

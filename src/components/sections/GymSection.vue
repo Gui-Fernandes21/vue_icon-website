@@ -48,4 +48,7 @@ p {
 #text-container {
   margin: 2rem;
 }
+main {
+  margin-bottom: 400px;
+}
 </style>

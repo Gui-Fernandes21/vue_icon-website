@@ -1,7 +1,8 @@
 <template>
   <section>
     <standard-header>About our Coach</standard-header>
-    
+  </section>
+  <section class="container-img-desc">
     <img src="/img/pablo_picture.jpg" class="responsive-img materialboxed" />
 
     <section id="desc">
@@ -28,17 +29,17 @@
 </template>
 
 <script>
-import StandardHeader from '../util/StandardHeader.vue';
+import StandardHeader from "../util/StandardHeader.vue";
 
 export default {
   computed: {
     pClass() {
       return "grey-text text-darken-4";
-    }
+    },
   },
   components: {
-    StandardHeader
-  }
+    StandardHeader,
+  },
 };
 </script>
 
@@ -83,5 +84,13 @@ h2.header {
 }
 section {
   margin: 4rem 0;
+}
+
+.container-img-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
 }
 </style>

@@ -1,11 +1,17 @@
 <template>
   <section>
+    <div class="center-align center col s12 m4 offset-m4">
+      <div class="section orange lighten-2">
+        <i class="material-icons small">priority_high</i>
+        <p>First Class is Always Free!</p>
+      </div>
+    </div>
     <section class="section section-icons center">
       <div class="container">
         <div class="row">
-          <div class="col s12 m6">
+          <div class="col s6 m6">
             <div class="card-panel">
-              <i class="material-icons medium orange-text text-lighten-2">
+              <i class="material-icons small orange-text text-lighten-2">
                 warning
               </i>
               <p>
@@ -14,14 +20,13 @@
               </p>
             </div>
           </div>
-          <div class="col s12 m6">
+          <div class="col s6 m6">
             <div class="card-panel">
-              <i class="material-icons medium orange-text text-lighten-2">
+              <i class="material-icons small orange-text text-lighten-2">
                 warning
               </i>
               <p>
-                If you would like to know more about the fees, please call Pablo
-                at:
+                To know more about the fees, call:
               </p>
               <p class="phone">+32 (0) 494 18 13 63</p>
             </div>
@@ -29,18 +34,23 @@
         </div>
       </div>
     </section>
-    <div class="center-align center col s12 m4 offset-m4">
-      <div class="section orange lighten-2">
-        <i class="material-icons small">priority_high</i>
-        <p>First Class is Always Free!</p>
-      </div>
-    </div>
   </section>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      isMobile: this.$store.getters.getMobile,
+    };
+  },
+};
+</script>
 
 <style scoped>
 div.section.orange {
   border-radius: 10px;
+  margin: 2rem auto 1rem;
 }
 .card-panel p {
   margin: 0;
@@ -49,6 +59,7 @@ div.section.orange {
 .phone {
   font-weight: bold;
 }
+p {
+  font-size: 13px;
+}
 </style>
-
-
