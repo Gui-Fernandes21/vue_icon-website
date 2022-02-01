@@ -16,3 +16,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+li {
+  text-align: left;
+}
+</style>

@@ -4,15 +4,19 @@
   <div id="fee-adults" class="section scrollspy col s12">
     <h3 class="grey-text text-darken-4">Adult Classes</h3>
     <div id="general">
-      <p class="grey-text text-darken-3">
-        3x pr. week - 65€ pr. month (3 month commitment) or 75€ pr. month
-        (monthly payments)
+      <p>
+        Per Month - 120€
       </p>
-      <p class="grey-text text-darken-3">
-        All classes - 75€ pr. month (3 month commitment) or 85€ pr. month
-        (monthly payments)
+      <p>
+        Per Trimester - 285€
       </p>
-      <span> You save 30€ by committing for 3 months. </span>
+      <p>
+        Per Semester - 510€
+      </p>
+      <p>
+        Per Year - 900€
+      </p>
+      <span> We offer more than 10 classes a week </span>
     </div>
     <div id="reduced" v-if="!isMobile">
       <p class="grey-text text-darken-2">
@@ -25,34 +29,31 @@
         REDUCED PRICES FOR STUDENTS AND WOMEN
       </p>
     </div>
-    <div>
-      <p class="grey-text text-darken-3">
-        All classes - 60€ (3 month commitment) or 70€ pr. month (monthly
-        payments)
+    <div id="students">
+      <p>
+        Per Month - 100€
       </p>
-      <span>
-        You save 75€ from the normal price if you are eligible for reduction and
-        you commit for 3 months
-      </span>
+      <p>
+        Per Trimester - 255€
+      </p>
+      <p>
+        Per Semester - 450€
+      </p>
+      <p>
+        Per Year - 780€
+      </p>
     </div>
   </div>
 
   <div id="fee-kids" class="section scrollspy col s12">
     <h3 class="grey-text text-darken-4">Kid's Class</h3>
     <div>
-      <p class="grey-text text-darken-3 lighten-3">
-        2x pr.week - 150€ for 3 months membership
+      <p>
+        Per Semester - 390€
       </p>
-      <p class="grey-text text-darken-3 lighten-3">
-        3x pr.week - 225€ for 3 months membership
+      <p>
+        Per Year - 660€
       </p>
-      <p class="grey-text text-darken-3 lighten-3">
-        6x pr.week - 330€ for 3 months membership
-      </p>
-      <span>
-        You are required to choose which days of the week your kid is going to
-        attend class
-      </span>
     </div>
   </div>
 
@@ -153,5 +154,12 @@ h3 {
 span {
   color: #ef5350;
   font-weight: bold;
+}
+
+#general p,
+#students p,
+#fee-kids p {
+  color: #424242;
+  font-size: large;
 }
 </style>

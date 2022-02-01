@@ -110,6 +110,9 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
 * {
   font-family: "Barlow Semi Condensed", sans-serif;
   box-sizing: border-box;
