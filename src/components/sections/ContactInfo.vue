@@ -34,7 +34,7 @@
                     style="margin-right: 3px"
                     aria-hidden="true"
                   ></i>
-                  pcerinorj@gmail.com
+                  IconBrussels@gmail.com
                 </p>
               </div>
             </div>

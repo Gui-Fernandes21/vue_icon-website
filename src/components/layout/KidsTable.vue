@@ -87,26 +87,23 @@
         <td></td>
       </tr>
       <!-- 7 line -->
-      <!-- <tr>
-          <td class="center-align orange lighten-2 z-depth-2">
-            <p>Kids(6-9) Class</p>
-            <p>16:00 - 17:00</p>
-          </td>
-          <td class="center-align orange lighten-2 z-depth-2">
-            <p>Kids(6-9) Class</p>
-            <p>16:00 - 17:00</p>
-          </td>
-          <td></td>
-          <td class="center-align orange lighten-2 z-depth-2">
-            <p>Kids(6-9) Class</p>
-            <p>16:00 - 17:00</p>
-          </td>
-          <td class="center-align orange lighten-2 z-depth-2">
-            <p>Kids(6-9) Class</p>
-            <p>16:00 - 17:00</p>
-          </td>
-          <td></td>
-        </tr>
+      <tr>
+        <td></td>
+        <td class="center-align green lighten-2 z-depth-2">
+          <p>Kids(3-6) Class</p>
+          <p class="important">(ENGLISH)</p>
+          <p>16:30 - 17:30</p>
+        </td>
+        <td></td>
+        <td class="center-align green lighten-2 z-depth-2">
+          <p>Kids(3-6) Class</p>
+          <p class="important">(ENGLISH)</p>
+          <p>16:30 - 17:30</p>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <!--
         <tr>
           <td class="center-align red lighten-2 z-depth-2">
             <p>Kids(9-12) Class</p>
@@ -177,6 +174,10 @@ td p {
   padding: 0;
   margin: 0;
   /* font-weight: bold; */
+}
+
+.important {
+  font-weight: bold;
 }
 
 p.bold {
