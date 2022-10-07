@@ -2,73 +2,63 @@
   <standard-header>Fees</standard-header>
 
   <div id="fee-adults" class="section scrollspy col s12">
-    <h3 class="grey-text text-darken-4">Adult Classes</h3>
-    <div id="general">
-      <p>
-        Per Month - 120€
-      </p>
-      <p>
-        Per Trimester - 285€
-      </p>
-      <p>
-        Per Semester - 510€
-      </p>
-      <p>
-        Per Year - 900€
-      </p>
-      <span> We offer more than 10 classes a week </span>
-    </div>
-    <div id="reduced" v-if="!isMobile">
-      <p class="grey-text text-darken-2">
-        REDUCED PRICES FOR STUDENTS AND WOMEN
-      </p>
-      <div class="highlight-line"></div>
-    </div>
-    <div id="reduced-mobile" v-else>
-      <p class="grey-text text-darken-2">
-        REDUCED PRICES FOR STUDENTS AND WOMEN
-      </p>
-    </div>
-    <div id="students">
-      <p>
-        Per Month - 100€
-      </p>
-      <p>
-        Per Trimester - 255€
-      </p>
-      <p>
-        Per Semester - 450€
-      </p>
-      <p>
-        Per Year - 780€
-      </p>
-    </div>
+    <header>
+      <h1>Adult Classes</h1>
+    </header>
+
+    <section>
+      <div id="general">
+        <price-card
+          v-for="pricing in adultPricing"
+          :key="pricing"
+          :data="pricing"
+        ></price-card>
+      </div>
+
+      <header>
+        <h3>REDUCED PRICES FOR STUDENTS AND WOMEN</h3>
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </header>
+
+      <div id="reduced">
+        <price-card
+          v-for="pricing in reducedPricing"
+          :key="pricing"
+          :data="pricing"
+        ></price-card>
+      </div>
+    </section>
   </div>
 
   <div id="fee-kids" class="section scrollspy col s12">
-    <h3 class="grey-text text-darken-4">Kid's Class</h3>
-    <div>
-      <p>
-        Per Semester - 390€
-      </p>
-      <p>
-        Per Year - 660€
-      </p>
-    </div>
+    <header>
+      <h1>Kid's Class</h1>
+    </header>
+    <section id="kids-cards">
+      <price-card
+        v-for="pricing in kidsPricing"
+        :key="pricing"
+        :data="pricing"
+      ></price-card>
+    </section>
   </div>
 
   <div id="fee-private" class="section scrollspy col s12">
-    <h3 class="grey-text text-darken-4">Private Class</h3>
-    <p class="grey-text text-darken-3 lighten-3">
-      For more information about Private classes, call or send an Email to coach
-      Pablo.
-    </p>
-    <a
-      href="#contact"
-      class="btn grey darken-4 waves-effect waves-light col m2 s4 offset-m5 offset-s4"
-    >
-      Contact
-    </a>
+    <header>
+      <h1>Private Class</h1>
+    </header>
+    <section>
+      <p class="grey-text text-darken-3 lighten-3">
+        For more information about Private classes, call or send an Email to
+        coach Pablo.
+      </p>
+      <a
+        href="#contact"
+        class="btn grey darken-4 waves-effect waves-light col m2 s4 offset-m5 offset-s4"
+      >
+        Contact
+      </a>
+    </section>
   </div>
   <warning-cards></warning-cards>
 </template>
@@ -76,11 +66,33 @@
 <script>
 import WarningCards from "../layout/WarningCards.vue";
 import StandardHeader from "../util/StandardHeader.vue";
+import PriceCard from "../layout/PriceCard.vue";
 
 export default {
+  data() {
+    return {
+      adultPricing: [
+        { title: "Month", price: 120, style: "basic" },
+        { title: "Trimester", price: 285, style: "basic" },
+        { title: "Semester", price: 510, style: "basic" },
+        { title: "Year", price: 900, style: "basic" },
+      ],
+      reducedPricing: [
+        { title: "Month", price: 100, style: "reduced" },
+        { title: "Trimester", price: 255, style: "reduced" },
+        { title: "Semester", price: 450, style: "reduced" },
+        { title: "Year", price: 780, style: "reduced" },
+      ],
+      kidsPricing: [
+        { title: "Semester", price: 390, style: "kids" },
+        { title: "Year", price: 660, style: "kids" },
+      ],
+    };
+  },
   components: {
     WarningCards,
     StandardHeader,
+    PriceCard,
   },
   computed: {
     isMobile() {
@@ -98,36 +110,31 @@ export default {
 .grey-text.text-darken-3 {
   font-size: large;
 }
-span {
-  font-size: medium;
-}
-#general {
-  margin-bottom: 3rem;
-}
+#general,
 #reduced {
-  margin: 4rem;
+  margin-bottom: 3rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+#kids-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 1rem 0;
 }
 #reduced-mobile {
   margin: 3rem;
   border: 3px orange solid;
 }
-#reduced-mobile p {
-  padding: 1rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin: 0;
-}
-#reduced p {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-}
 #fee-adults {
   margin-bottom: 3rem;
+}
+#fee-adults h3 {
+  color: #212121;
+  font-weight: 300;
 }
 #fee-private p {
   margin: 2rem;
@@ -135,25 +142,16 @@ span {
 #fee-private {
   margin-bottom: 5rem;
 }
-#fee-kids {
-  margin: 4rem 0;
-  padding: 0;
-}
 .highlight-line {
   height: 3px;
   width: calc(100% - 32vw);
   background: orange;
 }
 
-h3 {
-  font-size: 32px;
-  font-weight: 600;
-  margin: 2rem;
-}
-
 span {
   color: #ef5350;
   font-weight: bold;
+  font-size: medium;
 }
 
 #general p,
@@ -161,5 +159,10 @@ span {
 #fee-kids p {
   color: #424242;
   font-size: large;
+}
+
+ion-icon {
+  font-size: 3em;
+  font-weight: 100;
 }
 </style>
