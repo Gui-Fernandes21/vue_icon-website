@@ -4,6 +4,7 @@
       <div class="section orange lighten-2">
         <i class="material-icons small">priority_high</i>
         <p>First Class is Always Free!</p>
+        <p>(if you do not have a Gi, 10€ fee for rent of a Gi)</p>
       </div>
     </div>
     <section class="section section-icons center">

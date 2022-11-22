@@ -12,17 +12,20 @@
     <tbody>
       <tr>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>12:00 - 13:00</p>
         </td>
         <td></td>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>12:00 - 13:00</p>
         </td>
         <td></td>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>12:00 - 13:00</p>
         </td>
         <td></td>
@@ -37,7 +40,8 @@
         <td></td>
         <td></td>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>14:00 - 15:30</p>
         </td>
       </tr>
@@ -55,32 +59,39 @@
           <p>BJJ Basics</p>
           <p>19:00 - 20:00</p>
         </td>
-        <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
-          <p>19:30 - 21:00</p>
+        <td class="center-align orange darken-2 z-depth-2">
+          <p>BJJ Basics</p>
+          <p>19:00 - 20:00</p>
         </td>
         <td class="center-align orange darken-2 z-depth-2">
           <p>BJJ Basics</p>
           <p>19:00 - 20:00</p>
         </td>
-        <td class="center-align orange darken-4 z-depth-2">
-          <p>NoGi Adult</p>
+        <td class="center-align orange lighten-1 z-depth-2">
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>19:30 - 21:00</p>
         </td>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>19:00 - 20:30</p>
         </td>
         <td></td>
       </tr>
       <tr>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>20:00 - 21:30</p>
         </td>
-        <td></td>
+        <td class="center-align orange darken-4 z-depth-2">
+          <p>NoGi Adult</p>
+          <p>20:00 - 21:30</p>
+        </td>
         <td class="center-align orange lighten-1 z-depth-2">
-          <p>BJJ Adults</p>
+          <p>BJJ</p>
+          <p>Intermediate / Advanced</p>
           <p>20:00 - 21:30</p>
         </td>
         <td></td>
