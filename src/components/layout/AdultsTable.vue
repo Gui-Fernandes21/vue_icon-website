@@ -13,19 +13,19 @@
       <tr>
         <td class="center-align orange lighten-1 z-depth-2">
           <p>BJJ</p>
-          <p>Intermediate / Advanced</p>
+          <p>All Levels</p>
           <p>12:00 - 13:00</p>
         </td>
         <td></td>
         <td class="center-align orange lighten-1 z-depth-2">
           <p>BJJ</p>
-          <p>Intermediate / Advanced</p>
+          <p>All Levels</p>
           <p>12:00 - 13:00</p>
         </td>
         <td></td>
         <td class="center-align orange lighten-1 z-depth-2">
           <p>BJJ</p>
-          <p>Intermediate / Advanced</p>
+          <p>All Levels</p>
           <p>12:00 - 13:00</p>
         </td>
         <td></td>
@@ -41,7 +41,7 @@
         <td></td>
         <td class="center-align orange lighten-1 z-depth-2">
           <p>BJJ</p>
-          <p>Intermediate / Advanced</p>
+          <p>All Levels</p>
           <p>14:00 - 15:30</p>
         </td>
       </tr>
@@ -69,12 +69,12 @@
         </td>
         <td class="center-align orange lighten-1 z-depth-2">
           <p>BJJ</p>
-          <p>Intermediate / Advanced</p>
+          <p>All Levels</p>
           <p>19:30 - 21:00</p>
         </td>
         <td class="center-align orange lighten-1 z-depth-2">
           <p>BJJ</p>
-          <p>Intermediate / Advanced</p>
+          <p>All Levels</p>
           <p>19:00 - 20:30</p>
         </td>
         <td></td>
