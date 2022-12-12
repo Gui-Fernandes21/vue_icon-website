@@ -26,7 +26,7 @@
         <td class="center-align orange darken-4 z-depth-2">
           <p>NoGi</p>
           <p>All Levels</p>
-          <p>20:00 - 21:30</p>
+          <p>12:00 - 13:00</p>
         </td>
         <td></td>
       </tr>
