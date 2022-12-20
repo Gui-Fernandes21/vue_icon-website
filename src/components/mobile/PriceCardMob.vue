@@ -48,7 +48,7 @@ section {
   border-radius: 10px;
 }
 section:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 section.basic > header,
 section.basic > .actions > button {
@@ -107,5 +107,6 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 3vw;
+  color: #231f20;
 }
 </style>
