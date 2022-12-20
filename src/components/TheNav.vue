@@ -40,7 +40,7 @@
             <a href="#location">Location</a>
           </li>
           <li>
-            <a class="dropdown-button" data-target="time-tables" href="#">
+            <a class="dropdown-button" data-target="time-tables" href="#time-table">
               Time Tables<i class="material-icons right">keyboard_arrow_down</i>
             </a>
           </li>
@@ -53,7 +53,7 @@
             </li>
           </ul>
           <li>
-            <a class="dropdown-button" data-target="fees-dropdown" href="#">
+            <a class="dropdown-button" data-target="fees-dropdown" href="#fee-adults">
               Fees<i class="material-icons right">keyboard_arrow_down</i>
             </a>
           </li>
