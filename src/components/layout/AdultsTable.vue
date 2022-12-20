@@ -108,7 +108,6 @@ export default {
         "Friday",
         "Saturday",
       ],
-      isMobile: this.$store.getters.getMobile,
     };
   },
   computed: {
@@ -118,6 +117,9 @@ export default {
       } else {
         return "header";
       }
+    },
+    isMobile() {
+      return this.$store.getters.getMobile;
     },
     headerHl() {
       if (this.isMobile) {

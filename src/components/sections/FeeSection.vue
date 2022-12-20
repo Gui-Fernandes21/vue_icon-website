@@ -8,11 +8,20 @@
 
     <section>
       <div id="general">
-        <price-card
-          v-for="pricing in adultPricing"
-          :key="pricing"
-          :data="pricing"
-        ></price-card>
+        <div class="desk-card" v-if="!isMobile">
+          <price-card
+            v-for="pricing in adultPricing"
+            :key="pricing"
+            :data="pricing"
+          ></price-card>
+        </div>
+        <div class="mob" v-else>
+          <price-card-mob
+            v-for="pricing in adultPricing"
+            :key="pricing"
+            :data="pricing"
+          />
+        </div>
       </div>
 
       <header>
@@ -21,11 +30,20 @@
       </header>
 
       <div id="reduced">
-        <price-card
-          v-for="pricing in reducedPricing"
-          :key="pricing"
-          :data="pricing"
-        ></price-card>
+        <div class="desk-card" v-if="!isMobile">
+          <price-card
+            v-for="pricing in reducedPricing"
+            :key="pricing"
+            :data="pricing"
+          />
+        </div>
+        <div class="mob" v-else>
+          <price-card-mob
+            v-for="pricing in reducedPricing"
+            :key="pricing"
+            :data="pricing"
+          />
+        </div>
       </div>
     </section>
   </div>
@@ -35,11 +53,20 @@
       <h1>Kid's Class</h1>
     </header>
     <section id="kids-cards">
-      <price-card
-        v-for="pricing in kidsPricing"
-        :key="pricing"
-        :data="pricing"
-      ></price-card>
+      <div class="desk-card" v-if="!isMobile">
+        <price-card
+          v-for="pricing in kidsPricing"
+          :key="pricing"
+          :data="pricing"
+        ></price-card>
+      </div>
+      <div class="mob" v-else>
+        <price-card-mob
+          v-for="pricing in kidsPricing"
+          :key="pricing"
+          :data="pricing"
+        />
+      </div>
     </section>
   </div>
 
@@ -67,6 +94,7 @@
 import WarningCards from "../layout/WarningCards.vue";
 import StandardHeader from "../util/StandardHeader.vue";
 import PriceCard from "../layout/PriceCard.vue";
+import PriceCardMob from "../mobile/PriceCardMob.vue";
 
 export default {
   data() {
@@ -93,14 +121,18 @@ export default {
     WarningCards,
     StandardHeader,
     PriceCard,
+    PriceCardMob,
   },
   computed: {
+    // isMobile() {
+    //   if (screen.width <= 760) {
+    //     return true;
+    //   } else {
+    //     return false;
+    //   }
+    // },
     isMobile() {
-      if (screen.width <= 760) {
-        return true;
-      } else {
-        return false;
-      }
+      return this.$store.getters.getMobile;
     },
   },
 };
@@ -111,10 +143,12 @@ export default {
   font-size: large;
 }
 #general,
-#reduced {
+#reduced,
+.desk-card,
+.mob {
   margin-bottom: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }

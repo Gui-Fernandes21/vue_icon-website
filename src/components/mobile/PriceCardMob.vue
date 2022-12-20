@@ -42,7 +42,7 @@ section {
   align-items: center;
   min-height: 55vh;
   margin: 1rem;
-  width: 20vw;
+  width: 70vw;
   transition: 150ms transform ease-in;
   background: #231f20;
   border-radius: 10px;
@@ -81,7 +81,7 @@ section.kids > main {
   color: #4ef24e;
 }
 section > main {
-  font-size: 2rem;
+  font-size: 6vw;
 }
 header {
   width: 100%;
@@ -90,7 +90,7 @@ header {
   border-top-right-radius: 10px;
 }
 h1 {
-  font-size: calc(2vw);
+  font-size: 6vw;
   text-transform: uppercase;
   margin: 0;
 }
@@ -101,10 +101,11 @@ li {
   font-size: 3em;
 }
 button {
-  padding: 15px 40px;
+  padding: 10px 20px;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 3vw;
 }
 </style>

@@ -8,7 +8,7 @@
               <div class="col s12">
                 <h3 class="header">Contact</h3>
                 <br />
-                <p>
+                <p @click="navigateInsta">
                   <i
                     class="fa fa-instagram fa-lg"
                     style="margin-right: 5px"
@@ -16,7 +16,7 @@
                   ></i>
                   IconBjjBelgium
                 </p>
-                <p>
+                <p @click="navigateFace">
                   <i
                     class="fa fa-facebook fa-lg"
                     style="margin-right: 10px"
@@ -24,11 +24,14 @@
                   ></i
                   >Pablo Cerino
                 </p>
-                <p>
-                  <i class="fa fa-phone fa-lg" aria-hidden="true"></i> +32 (0)
-                  494 18 13 63
+                <p @click="test">
+                  <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                  <a
+                    href="tel:+32 (0) 494 18 13 63"
+                    > +32 (0) 494 18 13 63</a
+                  >
                 </p>
-                <p>
+                <p @click="navigateEmail">
                   <i
                     class="fa fa-at fa-lg"
                     style="margin-right: 3px"
@@ -58,5 +61,28 @@ export default {
   components: {
     ContactForm,
   },
+  methods: {
+    navigateInsta() {
+      return window.open(
+        "https://www.instagram.com/iconbjjbelgium/?hl=en",
+        "_blank"
+      );
+    },
+    navigateFace() {
+      return window.open(
+        "https://www.facebook.com/pablo.cerino.iconbjj",
+        "_blank"
+      );
+    },
+    navigateEmail() {
+      window.open('mailto:pcerinorj@gmail.com','_blank');
+    }
+  },
 };
 </script>
+
+<style scoped>
+p {
+  cursor: pointer;
+}
+</style>
