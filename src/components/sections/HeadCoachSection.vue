@@ -40,11 +40,11 @@
 						<div class="backdrop"></div>
 						<h1>Max Koning</h1>
 						<p>
-							Max is a high level purple belt from our team. He has
-							been achieving great results in competitions around Europe. He
-							also is a part of our coaching staff in our dojo.
+							Max is a high level purple belt from our team. He has achieved
+							great results in competitions on the Blue Belt scenario in
+							Belgium. He is also a part of our coaching staff in our dojo.
 						</p>
-            <span>Competition in Flanders, Belgium 2021</span>
+						<span>Competition in Flanders, Belgium 2021</span>
 					</li>
 				</ul>
 			</div>
@@ -202,8 +202,8 @@ section {
 
 <style scoped>
 img {
-  z-index: 0;
-  /* position: relative; */
+	z-index: 0;
+	/* position: relative; */
 }
 .backdrop {
 	position: absolute;
