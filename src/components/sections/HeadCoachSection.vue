@@ -25,7 +25,7 @@
 						</p>
 					</li>
 					<li class="slide gui">
-						<img src="../../../public/img/gui_ajpBrussels_doubleGold.jpg" />
+						<img src="../../../public/img/tryout.jpg" />
 						<div class="backdrop"></div>
 						<h1>Gui Fernandes</h1>
 						<p>
@@ -160,7 +160,7 @@ section {
 
 .slide img {
 	display: block;
-	width: 100%;
+	width: max-content;
 	height: 100%;
 	border-radius: 10px;
 	object-fit: cover;
