@@ -120,7 +120,7 @@
 	<img
 		class="hide-on-med-and-up"
 		@click.stop
-		src="/img/adults-timetable_icon.png"
+		src="/img/timetable_icon-adults.png"
 	/>
 </template>
 
