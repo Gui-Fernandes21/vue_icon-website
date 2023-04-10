@@ -208,7 +208,4 @@ h2.header-mobile {
 	border-top: 4px orange solid;
 }
 
-section{
-	outline: none;
-}
 </style>
