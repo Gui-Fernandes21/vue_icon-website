@@ -24,3 +24,14 @@
     </div>
   </section>
 </template>
+
+
+<style scoped>
+section {
+  max-width: 80%;
+  margin: auto;
+}
+.row {
+  margin-bottom: 0;
+}
+</style>
