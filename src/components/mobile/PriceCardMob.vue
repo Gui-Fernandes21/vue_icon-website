@@ -11,7 +11,7 @@
     </main>
 
     <div class="actions">
-      <button @click="contact">contact</button>
+      <button @click="contact">sign up now</button>
     </div>
   </section>
 </template>
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     contact() {
-      return (window.location.href = "#contact");
+      return (window.open(this.data.url));
     },
   },
 };
