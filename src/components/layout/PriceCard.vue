@@ -11,23 +11,39 @@
     </main>
 
     <div class="actions">
-      <button @click="contact">sign up now</button>
+      <button @click="openModal">sign up</button>
     </div>
   </section>
+  <teleport to="body">
+    <signup-modal v-if="showModal" @close-modal="closeHandler"></signup-modal>
+  </teleport>
 </template>
 
 <script>
+import SignupModal from './SignupModal.vue';
+
 export default {
+  components: {
+    SignupModal
+  },
   props: ["data"],
+  data() {
+    return {
+      showModal: false,
+    }
+  },
   computed: {
     cardStyle() {
       return this.data.style;
     },
   },
   methods: {
-    contact() {
-      return (window.open(this.data.url));
+    openModal() {
+      this.showModal = true;
     },
+    closeHandler() {
+      this.showModal = false;      
+    }
   },
 };
 </script>

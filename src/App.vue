@@ -52,7 +52,6 @@
     <!-- footer with contact info -->
     <contact-info-section></contact-info-section>
   </main>
-
   <!-- sidenav for mobile -->
   <side-nav></side-nav>
 </template>
