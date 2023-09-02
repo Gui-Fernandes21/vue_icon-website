@@ -89,16 +89,28 @@
       <!-- 7 line -->
       <tr>
         <td></td>
-        <td class="center-align green lighten-2 z-depth-2">
+        <td class="center-align indigo lighten-3 z-depth-2">
           <p>Kids(3-6) Class</p>
-          <p class="important">(ENGLISH)</p>
           <p>16:30 - 17:30</p>
         </td>
         <td></td>
-        <td class="center-align green lighten-2 z-depth-2">
+        <td class="center-align indigo lighten-3 z-depth-2">
           <p>Kids(3-6) Class</p>
-          <p class="important">(ENGLISH)</p>
           <p>16:30 - 17:30</p>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td class="center-align green lighten-2 z-depth-2">
+          <p>Kids(6-12) Class</p>
+          <p>17:30 - 18:30</p>
+        </td>
+        <td></td>
+        <td class="center-align green lighten-2 z-depth-2">
+          <p>Kids(6-12) Class</p>
+          <p>17:30 - 18:30</p>
         </td>
         <td></td>
         <td></td>
