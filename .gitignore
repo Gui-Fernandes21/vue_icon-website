@@ -23,6 +23,6 @@ pnpm-debug.log*
 *.sw?
 
 
-# Firebase
-
+# Firebase and Github file
 .firebase
+.github
