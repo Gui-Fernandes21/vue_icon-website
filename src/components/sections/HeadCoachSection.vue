@@ -33,7 +33,7 @@
               been achieving great results in competitions around Europe. He
               also is a part of our coaching staff in our dojo.
             </p>
-            <span>Competition in Berlin, Germany 2021</span>
+            <span>Competition in Dallas, Texas, USA 2023</span>
           </li>
           <!-- <li class="slide max">
             <img src="../../../public/img/max_picture.jpg" />
