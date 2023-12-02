@@ -25,7 +25,7 @@
             </p>
           </li>
           <li class="slide gui">
-            <img src="../../../public/img/gui_medals_pic.jpg" />
+            <img src="../../../public/img/gui-pan-medal.jpg" />
             <div class="backdrop"></div>
             <h1>Gui Fernandes</h1>
             <p>
