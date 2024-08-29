@@ -45,6 +45,28 @@
 					/>
 				</div>
 			</div>
+
+			<header>
+				<h3>WOMEN'S ONLY CLASS</h3>
+				<ion-icon name="chevron-down-outline"></ion-icon>
+			</header>
+
+			<div id="women">
+				<div class="desk-card" v-if="!isMobile">
+					<price-card
+						v-for="pricing in womenPricing"
+						:key="pricing"
+						:data="pricing"
+					/>
+				</div>
+				<div class="mob" v-else>
+					<price-card-mob
+						v-for="pricing in womenPricing"
+						:key="pricing"
+						:data="pricing"
+					/>
+				</div>
+			</div>
 		</section>
 	</div>
 
@@ -102,25 +124,25 @@ export default {
 			adultPricing: [
 				{
 					title: "Month",
-					price: 120,
+					price: 150,
 					style: "basic",
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=zSmFlpz5uKqkpGitIV4GpASvD",
 				},
 				{
 					title: "Trimester",
-					price: 285,
+					price: 390,
 					style: "basic",
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=vQVjjx1AskuoHVqHVpHRoO9Uw",
 				},
 				{
 					title: "Semester",
-					price: 510,
+					price: 690,
 					style: "basic",
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=UjgHFOCxyA4ANpoezR3eGcdik",
 				},
 				{
 					title: "Year",
-					price: 900,
+					price: 1200,
 					style: "basic",
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=wUo4l41Uzq0mcvYisX59L9jbR",
 				},
@@ -151,16 +173,42 @@ export default {
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=WmZM5Hi6uuq2vBW86QHfYr1vA",
 				},
 			],
+			womenPricing: [
+				{
+					title: "Month",
+					price: 120,
+					style: "women",
+					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=IJesd9XLNvWDrjj1Xee2LVBjH",
+				},
+				{
+					title: "Trimester",
+					price: 300,
+					style: "women",
+					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=9LmDb75yHO4LZpD8qBeIwBZMq",
+				},
+				{
+					title: "Semester",
+					price: 500,
+					style: "women",
+					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=zNIjkgeAFtWhx9cSHf1zW5MCW",
+				},
+				{
+					title: "Year",
+					price: 900,
+					style: "women",
+					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=WmZM5Hi6uuq2vBW86QHfYr1vA",
+				},
+			],
 			kidsPricing: [
 				{
 					title: "Semester",
-					price: 390,
+					price: 490,
 					style: "kids",
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=GmOjdsbJIBx0SHJaTf0TapZbq",
 				},
 				{
 					title: "Year",
-					price: 660,
+					price: 790,
 					style: "kids",
 					url: "https://iconbjj.wodify.com/OnlineSalesPortal/PurchaseByKeyEntry.aspx?Key=sFyoyO7k8J47mTKBKwfWGlMNZ",
 				},

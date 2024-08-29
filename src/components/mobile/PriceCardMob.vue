@@ -76,6 +76,7 @@ section.basic > main {
 section.basic > .actions > button:hover {
 	background: #ffb11f;
 }
+
 section.reduced > header,
 section.reduced > .actions > button {
 	background: #ff4949;
@@ -86,6 +87,20 @@ section.reduced > .actions > button:hover {
 section.reduced > main {
 	color: #ff4949;
 }
+
+
+section.women > header,
+section.women > .actions > button {
+	background: #ff8484;
+}
+section.women > .actions > button:hover {
+	background: #ff7676;
+}
+section.women > main {
+	color: #ff8484;
+}
+
+
 section.kids > header,
 section.kids > .actions > button {
 	background: #4ef24e;
