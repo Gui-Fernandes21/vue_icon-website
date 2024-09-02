@@ -11,11 +11,14 @@
 		</main>
 
 		<div class="actions">
-			<button @click="openModal">sign up now</button>
+			<button @click="navigatePurchase(data.url)">sign up now</button>
+			<!-- <button @click="openModal">sign up now</button> -->
 		</div>
 	</section>
 	<teleport to="body">
-		<signup-modal v-if="showModal" @close-modal="closeHandler"></signup-modal>
+		<signup-modal v-if="showModal" @close-modal="closeHandler">
+			<slot name="modal"></slot>
+		</signup-modal>
 	</teleport>
 </template>
 
@@ -44,6 +47,9 @@ export default {
 		closeHandler() {
 			this.showModal = false;
 		},
+		navigatePurchase(url) {
+			window.location.href = url;
+		}
 	},
 };
 </script>
