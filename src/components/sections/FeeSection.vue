@@ -170,7 +170,7 @@ export default {
 					title: "Year",
 					price: 780,
 					style: "reduced",
-					url: "",
+					url: "https://checkout.joinmaat.com/?gymId=pablo_cerino_jiu_jitsu_school&priceId=price_1P42lYP20CPU4adev34BKBa0",
 				},
 			],
 			womenPricing: [

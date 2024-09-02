@@ -11,7 +11,8 @@
 		</main>
 
 		<div class="actions">
-			<button @click="navigatePurchase(data.url)">sign up now</button>
+			<span>*+2.5% handling fee at checkout*</span>
+			<button :disabled="!data.url" @click="navigatePurchase(data.url)">{{ data.url ? 'Signup Now' : "Coming up soon" }}</button>
 			<!-- <button @click="openModal">sign up now</button> -->
 		</div>
 	</section>
@@ -48,7 +49,9 @@ export default {
 			this.showModal = false;
 		},
 		navigatePurchase(url) {
-      window.location.href = url;		},
+			if (!url) return;
+			window.location.href = url;
+		},
 	},
 };
 </script>
@@ -70,6 +73,11 @@ section {
 }
 section:hover {
 	transform: scale(1.02);
+}
+.actions > span {
+	color: white;
+	font-size: 12px;
+	margin: 10px 0;
 }
 section.basic > header,
 section.basic > .actions > button {
@@ -134,6 +142,7 @@ li {
 	font-size: 3em;
 }
 button {
+	margin: 10px 0;
 	padding: 15px 40px;
 	text-transform: uppercase;
 	border: none;

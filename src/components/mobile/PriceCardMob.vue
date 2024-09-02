@@ -11,7 +11,8 @@
 		</main>
 
 		<div class="actions">
-			<button @click="navigatePurchase(data.url)">sign up now</button>
+			<span>+2.5% handling fee at checkout</span>
+			<button :disabled="!data.url" @click="navigatePurchase(data.url)">{{ data.url ? 'Signup Now' : "Coming up soon" }}</button>
 			<!-- <button @click="openModal">sign up now</button> -->
 		</div>
 	</section>
@@ -71,6 +72,9 @@ section {
 }
 section:hover {
 	transform: scale(1.04);
+}
+.actions > span {
+	color: white;
 }
 section.basic > header,
 section.basic > .actions > button {
@@ -138,6 +142,8 @@ li {
 	font-size: 3em;
 }
 button {
+	width: 100%;
+	margin: 10px 0;
 	padding: 10px 20px;
 	text-transform: uppercase;
 	border: none;

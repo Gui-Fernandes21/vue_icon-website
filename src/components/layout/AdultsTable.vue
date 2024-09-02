@@ -32,19 +32,31 @@
 					<p>All Levels</p>
 					<p>12:00 - 13:00</p>
 				</td>
-				<td></td>
-				<td class="center-align orange lighten-1 z-depth-2">
-					<p>BJJ</p>
-					<p>All Levels</p>
-					<p>12:00 - 13:00</p>
-				</td>
-				<td></td>
 				<td class="center-align orange darken-4 z-depth-2">
 					<p>NoGi</p>
 					<p>All Levels</p>
 					<p>12:00 - 13:00</p>
 				</td>
-				<td></td>
+				<td class="center-align orange lighten-1 z-depth-2">
+					<p>BJJ</p>
+					<p>All Levels</p>
+					<p>12:00 - 13:00</p>
+				</td>
+				<td class="center-align orange lighten-1 z-depth-2">
+					<p>BJJ</p>
+					<p>All Levels</p>
+					<p>12:00 - 13:00</p>
+				</td>
+				<td class="center-align orange darken-4 z-depth-2">
+					<p>NoGi</p>
+					<p>All Levels</p>
+					<p>12:00 - 13:00</p>
+				</td>
+				<td class="center-align orange lighten-1 z-depth-2">
+					<p>BJJ</p>
+					<p>All Levels</p>
+					<p>12:00 - 13:00</p>
+				</td>
 			</tr>
 			<tr>
 				<td v-for="day in days" :key="day"></td>
@@ -70,6 +82,7 @@
 			<tr>
 				<td class="center-align pink lighten-2 z-depth-2">
 					<p>Women's Only</p>
+					<strong>coming up soon</strong>
 					<p>18:00 - 19:00</p>
 				</td>
 				<!-- tuesday -->
@@ -77,6 +90,7 @@
 				<!-- WED -->
 				<td class="center-align pink lighten-2 z-depth-2">
 					<p>Women's Only</p>
+					<strong>coming up soon</strong>
 					<p>18:00 - 19:00</p>
 				</td>
 				<!-- Thur -->
