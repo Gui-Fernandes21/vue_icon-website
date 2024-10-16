@@ -82,7 +82,6 @@
 			<tr>
 				<td class="center-align pink lighten-2 z-depth-2">
 					<p>Women's Only</p>
-					<strong>coming up soon</strong>
 					<p>18:00 - 19:00</p>
 				</td>
 				<!-- tuesday -->
@@ -90,7 +89,6 @@
 				<!-- WED -->
 				<td class="center-align pink lighten-2 z-depth-2">
 					<p>Women's Only</p>
-					<strong>coming up soon</strong>
 					<p>18:00 - 19:00</p>
 				</td>
 				<!-- Thur -->
