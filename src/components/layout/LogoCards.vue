@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col s6 m4 offset-m2">
           <div class="card-panel grey lighten-4">
-            <img src="/img/pcerino-logo.png" />
+            <img class="pablo-logo" src="/img/pcerino-logo.png" />
           </div>
         </div>
         <div class="col s6 m4">
@@ -23,5 +23,8 @@ img {
 }
 section {
   margin-top: 20px;
+}
+.pablo-logo {
+  filter: contrast(1) brightness(0);
 }
 </style>
