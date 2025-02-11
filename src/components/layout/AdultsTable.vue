@@ -17,7 +17,12 @@
 					<p>All Levels</p>
 					<p>7:30 - 8:30</p>
 				</td>
-				<td></td>
+				<td class="center-align orange darken-4 z-depth-2">
+					<p>NoGi</p>
+					<p>All Levels</p>
+					<p>7:30 - 8:30</p>
+				</td>
+				<!-- <td></td> -->
 				<td class="center-align orange lighten-1 z-depth-2">
 					<p>BJJ</p>
 					<p>All Levels</p>
@@ -52,11 +57,12 @@
 					<p>All Levels</p>
 					<p>12:00 - 13:00</p>
 				</td>
-				<td class="center-align orange lighten-1 z-depth-2">
+				<td></td>
+				<!-- <td class="center-align orange lighten-1 z-depth-2">
 					<p>BJJ</p>
 					<p>All Levels</p>
 					<p>12:00 - 13:00</p>
-				</td>
+				</td> -->
 			</tr>
 			<tr>
 				<td v-for="day in days" :key="day"></td>

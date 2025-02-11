@@ -11,6 +11,8 @@
 		</main>
 
 		<div class="actions">
+			<span>*Non-Reimbursable Membership*</span>
+			<br>
 			<span>*+2.5% handling fee at checkout*</span>
 			<button :disabled="!data.url" @click="navigatePurchase(data.url)">{{ data.url ? 'Signup Now' : "Coming up soon" }}</button>
 			<!-- <button @click="openModal">sign up now</button> -->
