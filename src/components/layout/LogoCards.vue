@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col s6 m4 offset-m2">
           <div class="card-panel grey lighten-4">
-            <img src="/img/logo-Pablo-Cerino.png" />
+            <img src="/img/pcerino-logo.png" />
           </div>
         </div>
         <div class="col s6 m4">
